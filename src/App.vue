@@ -4,14 +4,38 @@
       <h1>My Friends</h1>
     </header>
     <ul>
-      <friend-contact name="Taufan Prasetyo" phone="0822 7866 6712" email="taufanprasetyobasri@gmail.com">
+      <friend-contact
+        v-for="friend in friends" :key="friend.id"
+        :name="friend.name"
+        :phone="friend.phone" 
+        :email="friend.email"
+      >
       </friend-contact>
     </ul>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      friends: [
+        {
+          id: '001',
+          name: 'Taufan Prasetyo',
+          phone: '0822 7866 6712',
+          email: 'taufanprasetyobasri@gmail.com'
+        },
+        {
+          id: '002',
+          name: 'Evita Karlina',
+          phone: '0822 7866 6712',
+          email: 'taufanprasetyobasri@gmail.com'
+        }
+      ]
+    }
+  },
+};
 </script>
 
 <style>
