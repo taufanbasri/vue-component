@@ -4,7 +4,8 @@
       <h1>My Friends</h1>
     </header>
     <ul>
-      <friend-contact></friend-contact>
+      <friend-contact name="Taufan Prasetyo" phone="0822 7866 6712" email="taufanprasetyobasri@gmail.com">
+      </friend-contact>
     </ul>
   </section>
 </template>
